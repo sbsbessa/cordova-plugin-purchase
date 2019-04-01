@@ -759,7 +759,12 @@ static NSString *jsErrorCodeAsString(NSInteger code) {
     // Only thing is: the developper needs to be sure to handle all types of IAP defines on the AppStore.
     // Which should be OK...
     //
-    
+    return NO;
+
+    /*
+    // SBB @ Ideavity 2019/04/01
+    // we can't handle direct purchase links from appstore
+
     // Let's check if we already loaded this product informations.
     // Since it's provided to us generously, let's store them here.
     NSString *productId = payment.productIdentifier;
@@ -768,6 +773,7 @@ static NSString *jsErrorCodeAsString(NSInteger code) {
     }
 
     return YES;
+    */
 }
 
 @end
